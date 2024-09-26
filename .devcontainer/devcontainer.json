@@ -1,0 +1,14 @@
+{
+    "name": "C# Dev Container",
+    "image": "mcr.microsoft.com/dotnet/core/sdk:3.1",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.csharp",
+                "ms-vscode.vscode-node-azure-pack"
+            ]
+        }
+    }
+}
